@@ -22,8 +22,8 @@
 
     <Button
         android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="101dp"
+        android:layout_height="53dp"
         android:text="@string/gallery"
         app:layout_constraintEnd_toStartOf="@+id/guideline_vertical"
         app:layout_constraintHorizontal_bias="0.051"
