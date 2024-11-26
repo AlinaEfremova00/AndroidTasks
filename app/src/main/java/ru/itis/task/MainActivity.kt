@@ -1,11 +1,36 @@
 package ru.itis.task
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        val shareButton: Button = findViewById(R.id.share_button)
+        shareButton.setOnClickListener {
+            val shareIntent = Intent().apply {
+                action = Intent.ACTION_SEND
+                putExtra(Intent.EXTRA_TEXT, "Посмотри на этот мем: https://example.com/cat.jpg")
+                type = "text/plain"
+            }
+            startActivity(Intent.createChooser(shareIntent, "Поделиться мемом"))
+        }
+
+        val button1: Button = findViewById(R.id.button1)
+        button1.setOnClickListener{
+            val intent = Intent(this, ShareReceiverActivity::class.java)
+            startActivity(intent)
+        }
+
+        val button2: Button = findViewById(R.id.button2)
+        button2.setOnClickListener{
+            val intent = Intent(this, SecondActivity::class.java)
+            startActivity(intent)
+        }
 
         // Пример
         val meme = Meme(id = 1, name = "Мем с котиком", imageUrl = "https://example.com/cat.jpg", emotion = "радость")
@@ -129,4 +154,5 @@ class MainActivity : AppCompatActivity() {
             globalMemes.forEach { println(it) }
         }
     }
+
 }
