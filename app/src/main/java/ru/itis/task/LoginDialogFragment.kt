@@ -16,12 +16,12 @@ class LoginDialogFragment : DialogFragment() {
 
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
         return AlertDialog.Builder(requireContext())
-            .setTitle("Вход в аккаунт")
-            .setMessage("Пожалуйста, войдите в аккаунт или зарегистрируйтесь, чтобы продолжить.")
-            .setPositiveButton("Войти") { _, _ ->
+            .setTitle(getString(R.string.login_dialog_title))
+            .setMessage(getString(R.string.login_dialog_text))
+            .setPositiveButton(getString(R.string.sign_in)) { _, _ ->
                 listener?.onLoginSelected()
             }
-            .setNegativeButton("Зарегистрироваться") { _, _ ->
+            .setNegativeButton(getString(R.string.register)) { _, _ ->
                 listener?.onRegisterSelected()
             }
             .create()

@@ -22,12 +22,14 @@ class MainActivity : AppCompatActivity() {
                 val dialog = LoginDialogFragment()
                 dialog.listener = object : LoginDialogFragment.OnLoginActionListener {
                     override fun onLoginSelected() {
-                        val intent = Intent(this@MainActivity, LoginActivity::class.java)
+                        val intent = Intent(this@MainActivity, ProfileActivity::class.java)
+                        intent.putExtra("fragment_to_load", "login")
                         startActivity(intent)
                     }
 
                     override fun onRegisterSelected() {
-                        val intent = Intent(this@MainActivity, RegisterActivity::class.java)
+                        val intent = Intent(this@MainActivity, ProfileActivity::class.java)
+                        intent.putExtra("fragment_to_load", "register")
                         startActivity(intent)
                     }
                 }

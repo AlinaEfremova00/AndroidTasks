@@ -6,5 +6,14 @@
     <string name="select_image">Select image</string>
     <string name="gallery">Gallery</string>
     <string name="share">Share</string>
-    <string name="hello_blank_fragment">Home</string>
+    <string name="hello_blank_fragment" translatable="false">Home</string>
+    <string name="login_dialog_title">Login to account</string>
+    <string name="login_dialog_text">Please sign in or register to continue.</string>
+    <string name="sign_in">Sign in</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="date_of_birth">Date of birth</string>
+    <string name="profile_title" translatable="false">Profile</string>
 </resources>

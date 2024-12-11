@@ -6,6 +6,6 @@
     <color name="app_primary">#FF007F</color>
     <color name="app_secondary">#EB6AA4</color> <!-- Светло-розовый -->
     <color name="background">#FFD1E8</color> <!-- Бледно-розовый -->
-    <color name="text_gray">#808080</color> <!-- Серый текст -->
+    <color name="gray">#808080</color> <!-- Серый текст -->
 
 </resources>

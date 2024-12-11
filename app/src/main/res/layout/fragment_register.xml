@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="@color/background">
+
+    <EditText
+        android:id="@+id/username_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/login"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:padding="12dp"
+        android:background="@color/white"
+        android:textColorHint="@color/gray"
+        android:textColor="@color/black"
+        android:layout_marginBottom="16dp"
+        />
+
+    <EditText
+        android:id="@+id/email_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        android:background="@color/white"
+        android:textColorHint="@color/gray"
+        android:textColor="@color/black"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/birthdate_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/date_of_birth"
+        android:importantForAutofill="no"
+        android:inputType="date"
+        android:padding="12dp"
+        android:background="@color/white"
+        android:textColorHint="@color/gray"
+        android:textColor="@color/black"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/password_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:background="@color/white"
+        android:textColorHint="@color/gray"
+        android:textColor="@color/black"
+        android:layout_marginBottom="24dp"/>
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        android:backgroundTint="@color/button"
+        android:textColor="@color/white"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/switch_to_login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_in"
+        android:backgroundTint="@color/background"
+        android:textColor="@color/black"
+        android:padding="12dp"/>
+</LinearLayout>

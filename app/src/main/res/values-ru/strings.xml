@@ -7,4 +7,12 @@
     <string name="select_image">Выбрать изображение</string>
     <string name="gallery">Галерея</string>
     <string name="share">Поделиться</string>
+    <string name="login_dialog_title">Вход в аккаунт</string>
+    <string name="login_dialog_text">Пожалуйста, войдите в аккаунт или зарегистрируйтесь, чтобы продолжить.</string>
+    <string name="sign_in">Войти</string>
+    <string name="register">Зарегистрироваться</string>
+    <string name="login">Логин</string>
+    <string name="password">Пароль</string>
+    <string name="email">Электронная почта</string>
+    <string name="date_of_birth">Дата рождения</string>
 </resources>

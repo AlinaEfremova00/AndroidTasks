@@ -44,13 +44,6 @@
             android:name=".ProfileActivity">
         </activity>
 
-        <activity
-            android:name=".LoginActivity">
-        </activity>
-
-        <activity
-            android:name=".RegisterActivity">
-        </activity>
 
     </application>
 
